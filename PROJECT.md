@@ -26,7 +26,7 @@ Install the pinned dependencies and select `.venv\Scripts\python.exe` as the edi
 .\.venv\Scripts\python.exe -m pytest tests checks -v
 ```
 
-Once `tests/` exists, `pytest.ini` makes the first command run the student tests. The second command runs the student tests and supplied acceptance checks. The required `test_add` case uses inputs `2` and `3`, expects `5`, and its assertion checks that `add` returns that result.
+The first test command runs the student tests selected by `pytest.ini`. The second runs the student tests and supplied acceptance checks. In `test_add`, the inputs are `2` and `3`; its assertion checks that `add` returns the expected result, `5`.
 
 The pinned `requirements.txt` is committed so another developer and CI can install the same dependencies. `.venv` stays local and ignored because it contains machine-specific executable paths and installed packages.
 
